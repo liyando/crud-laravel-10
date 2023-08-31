@@ -1,11 +1,11 @@
 <?php
 
-namespace liyando/Crudgenlaravel\Services\Api;
+namespace liyando\Crudgenlaravel\Services\Api;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Illuminate\Contracts\Foundation\Application;
-use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
+use liyando\Crudgenlaravel\Services\PathsAndNamespacesService;
 
 class RemoveApiCrudService
 {

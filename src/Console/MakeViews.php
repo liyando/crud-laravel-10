@@ -1,13 +1,13 @@
 <?php
 
-namespace liyando/Crudgenlaravel\Console;
+namespace liyando\Crudgenlaravel\Console;
 
 use Illuminate\Console\Command;
 
-use liyando/Crudgenlaravel\Services\MakeGlobalService;
-use liyando/Crudgenlaravel\Services\MakeViewsService;
+use liyando\Crudgenlaravel\Services\MakeGlobalService;
+use liyando\Crudgenlaravel\Services\MakeViewsService;
 use Illuminate\Support\Facades\File;
-use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
+use liyando\Crudgenlaravel\Services\PathsAndNamespacesService;
 
 class MakeViews extends Command
 {
@@ -54,7 +54,7 @@ class MakeViews extends Command
         if(!File::isDirectory($this->pathsAndNamespacesService->getCrudgenViewsStubCustom($templateViewsDirectory)))
         {
             if($templateViewsDirectory=='default-theme')
-                $this->error("Publish the default theme with: php artisan vendor:publish --provider=\"liyando/Crudgenlaravel\CrudgenServiceProvider\" or create your own default-theme directory here: ".$this->pathsAndNamespacesService->getCrudgenViewsStub());
+                $this->error("Publish the default theme with: php artisan vendor:publish --provider=\"liyando\Crudgenlaravel\CrudgenServiceProvider\" or create your own default-theme directory here: ".$this->pathsAndNamespacesService->getCrudgenViewsStub());
             else
                 $this->error("Do you have created a directory called ".$templateViewsDirectory." here: ".$this->pathsAndNamespacesService->getCrudgenViewsStub().'?');
             return;

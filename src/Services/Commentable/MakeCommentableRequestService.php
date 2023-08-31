@@ -1,11 +1,11 @@
 <?php
 
-namespace liyando/Crudgenlaravel\Services\Commentable;
+namespace liyando\Crudgenlaravel\Services\Commentable;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Illuminate\Support\Facades\File;
-use liyando/Crudgenlaravel\Services\MakeGlobalService;
-use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
+use liyando\Crudgenlaravel\Services\MakeGlobalService;
+use liyando\Crudgenlaravel\Services\PathsAndNamespacesService;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 class MakeCommentableRequestService

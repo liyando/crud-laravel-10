@@ -1,6 +1,6 @@
 <?php
 
-namespace liyando/Crudgenlaravel\Services;
+namespace liyando\Crudgenlaravel\Services;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Illuminate\Support\Facades\File;
