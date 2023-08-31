@@ -1,17 +1,17 @@
 <?php
 
-namespace liyando/Crudgenlaravel;
+namespace liyando\Crudgenlaravel;
 
 use Illuminate\Support\ServiceProvider;
-use liyando/Crudgenlaravel\Console\MakeApiCrud;
-use liyando/Crudgenlaravel\Console\MakeCommentable;
-use liyando/Crudgenlaravel\Console\MakeCrud;
-use liyando/Crudgenlaravel\Console\MakeService;
-use liyando/Crudgenlaravel\Console\MakeViews;
-use liyando/Crudgenlaravel\Console\RemoveApiCrud;
-use liyando/Crudgenlaravel\Console\RemoveCommentable;
-use liyando/Crudgenlaravel\Console\RemoveCrud;
-use liyando/Crudgenlaravel\Console\RemoveService;
+use liyando\Crudgenlaravel\Console\MakeApiCrud;
+use liyando\Crudgenlaravel\Console\MakeCommentable;
+use liyando\Crudgenlaravel\Console\MakeCrud;
+use liyando\Crudgenlaravel\Console\MakeService;
+use liyando\Crudgenlaravel\Console\MakeViews;
+use liyando\Crudgenlaravel\Console\RemoveApiCrud;
+use liyando\Crudgenlaravel\Console\RemoveCommentable;
+use liyando\Crudgenlaravel\Console\RemoveCrud;
+use liyando\Crudgenlaravel\Console\RemoveService;
 
 class CrudgenServiceProvider extends ServiceProvider
 {
