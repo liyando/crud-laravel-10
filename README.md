@@ -1,4 +1,4 @@
-# mentah-laravel-10
+# Crud-laravel-10
 # Crud Generator Laravel 9 dan 10 (penghemat waktu Anda)
 
 Crud Generator Laravel adalah paket yang dapat Anda integrasikan di Laravel Anda untuk membuat CRUD NYATA. Itu termasuk:
