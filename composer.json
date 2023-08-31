@@ -15,7 +15,6 @@
     "require":
     	{
     		"php": ">=8.0.0",
-            "another-vendor/package": "1.*"
     	},
     "autoload":
     {
