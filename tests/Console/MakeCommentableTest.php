@@ -26,12 +26,12 @@ class MakeCommentableTest extends TestCase
         $arrayViewsExisting = array_map(fn($path) => basename($path), glob(resource_path('views/posts/').'*'));
         $this->assertCount(0, $arrayViewsExisting);
         $this->artisan('make:crud', ['crud_name'=>"post", "columns"=>"title, url"])
-            ->expectsConfirmation('Do you want to create relationships between this model and another one?', 'no');
+            ->expectsConfirmation('Apakah Anda ingin membuat hubungan antara model ini dan model lainnya?', 'no');
 
         $expectedViews =  glob(resource_path("views".DIRECTORY_SEPARATOR."*".DIRECTORY_SEPARATOR."*.blade.php"));
         $this->artisan('make:commentable', ['commentable_name'=>"comment"])
             ->expectsQuestion('What is the name of the other model to which you want to add a commentable section? ex:Post', 'post')
-            ->expectsConfirmation('Do you confirm the creation of this relationship? "$this->belongsTo(\'App\Models\Post\')"', 'yes')
+            ->expectsConfirmation('Apakah Anda mengonfirmasi terciptanya hubungan ini? "$this->belongsTo(\'App\Models\Post\')"', 'yes')
             ->expectsChoice('On which view do you want to add the comment section?', $expectedViews[3], $expectedViews);
 
         //controller

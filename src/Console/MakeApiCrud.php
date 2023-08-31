@@ -125,7 +125,7 @@ class MakeApiCrud extends Command
     private function createRelationships($infos, $namingConvention)
     {
         $singularName = $namingConvention['singular_name'];
-        if ($this->confirm('Do you want to create relationships between this model and another one?'))
+        if ($this->confirm('Apakah Anda ingin membuat hubungan antara model ini dan model lainnya?'))
         {
             $type = $this->choice(
                 'Which type?',
@@ -153,13 +153,13 @@ class MakeApiCrud extends Command
     }
 
     private function setNameModelRelationship($type, $namingConvention, $infos)
-    {
-        $nameOtherModel = $this->ask('What is the name of the other model? ex:Post');
+    { 
+        $nameOtherModel = $this->ask('Apa nama model lainnya? contoh: Post');
 
         //we stock all relationships in $infos
         $correctNameOtherModel = ucfirst(Str::singular($nameOtherModel));
         $correctNameOtherModelWithNamespace = $this->laravel->getNamespace().'Models\\'.$correctNameOtherModel;
-        if($this->confirm('Do you confirm the creation of this relationship? "'.'$this->'.$type.'(\''.$correctNameOtherModelWithNamespace .'\')"'))
+        if($this->confirm('Apakah Anda mengonfirmasi terciptanya hubungan ini? "'.'$this->'.$type.'(\''.$correctNameOtherModelWithNamespace .'\')"'))
         {
             $infos[]= ['name'=>$nameOtherModel, 'type'=>$type];
             $this->createRelationships($infos, $namingConvention);

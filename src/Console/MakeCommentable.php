@@ -142,7 +142,7 @@ class MakeCommentable extends Command
 
         $correctNameOtherModel = ucfirst(Str::singular($nameOtherModel));
         $correctNameOtherModelWithNamespace = $this->laravel->getNamespace().'Models\\'.$correctNameOtherModel;
-        if($this->confirm('Do you confirm the creation of this relationship? "'.'$this->'.$type.'(\''.$correctNameOtherModelWithNamespace .'\')"'))
+        if($this->confirm('Apakah Anda mengonfirmasi terciptanya hubungan ini? "'.'$this->'.$type.'(\''.$correctNameOtherModelWithNamespace .'\')"'))
         {
             $infos[] = ['name'=>$nameOtherModel, 'type'=>$type];
             $this->makeModelService->makeCompleteModelFile($infos, $singularName, $namingConvention, $this->laravel->getNamespace());
