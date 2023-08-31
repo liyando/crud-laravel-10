@@ -23,7 +23,7 @@ Crud Generator Laravel is a package that you can integrate in your Laravel to cr
 
 3\. Publish the configuration file and the default-theme directory for views:
 
-``` php artisan vendor:publish --provider="Mrdebug\Crudgen\CrudgenServiceProvider" ```
+``` php artisan vendor:publish --provider="liyando\Crudgenlaravel\CrudgenServiceProvider" ```
 
 
 ## Usage
