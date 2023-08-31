@@ -1,14 +1,14 @@
 <?php
 
-namespace Mrdebug\Crudgen\Services\Commentable;
+namespace liyando/Crudgenlaravel\Services\Commentable;
 
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Symfony\Component\Console\Output\ConsoleOutput;
 use Illuminate\Contracts\Foundation\Application;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use liyando/Crudgenlaravel\Services\MakeGlobalService;
+use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
 
 class MakeCommentableControllerService
 {

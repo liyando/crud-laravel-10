@@ -1,12 +1,12 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace liyando/Crudgenlaravel\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
-use Mrdebug\Crudgen\Services\RemoveCommentableService;
+use liyando/Crudgenlaravel\Services\MakeGlobalService;
+use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
+use liyando/Crudgenlaravel\Services\RemoveCommentableService;
 
 class RemoveService extends Command
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrdebug\Crudgen\Services;
+namespace liyando/Crudgenlaravel\Services;
 
 use Illuminate\Support\Facades\File;
 

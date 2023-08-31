@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrdebug\Crudgen\Exceptions;
+namespace liyando/Crudgenlaravel\Exceptions;
 
 use Exception;
 use Symfony\Component\Console\Exception\ExceptionInterface;

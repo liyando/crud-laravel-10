@@ -1,18 +1,18 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace liyando/Crudgenlaravel\Console;
 
 use Illuminate\Console\Command;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Mrdebug\Crudgen\Services\Api\MakeApiControllerService;
-use Mrdebug\Crudgen\Services\Api\MakeApiRequestService;
-use Mrdebug\Crudgen\Services\Api\MakeResourceService;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\MakeMigrationService;
-use Mrdebug\Crudgen\Services\MakeModelService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use liyando/Crudgenlaravel\Services\Api\MakeApiControllerService;
+use liyando/Crudgenlaravel\Services\Api\MakeApiRequestService;
+use liyando/Crudgenlaravel\Services\Api\MakeResourceService;
+use liyando/Crudgenlaravel\Services\MakeGlobalService;
+use liyando/Crudgenlaravel\Services\MakeMigrationService;
+use liyando/Crudgenlaravel\Services\MakeModelService;
+use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
 
 class MakeApiCrud extends Command
 {

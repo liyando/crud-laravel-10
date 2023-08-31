@@ -1,17 +1,17 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace liyando/Crudgenlaravel\Console;
 
 use Illuminate\Console\Command;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Mrdebug\Crudgen\Services\MakeControllerService;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\MakeMigrationService;
-use Mrdebug\Crudgen\Services\MakeModelService;
-use Mrdebug\Crudgen\Services\MakeRequestService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use liyando/Crudgenlaravel\Services\MakeControllerService;
+use liyando/Crudgenlaravel\Services\MakeGlobalService;
+use liyando/Crudgenlaravel\Services\MakeMigrationService;
+use liyando/Crudgenlaravel\Services\MakeModelService;
+use liyando/Crudgenlaravel\Services\MakeRequestService;
+use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
 
 class MakeCrud extends Command
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace liyando/Crudgenlaravel\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\RemoveCrudService;
+use liyando/Crudgenlaravel\Services\MakeGlobalService;
+use liyando/Crudgenlaravel\Services\RemoveCrudService;
 
 class RemoveCrud extends Command
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Mrdebug\Crudgen\Console;
+namespace liyando/Crudgenlaravel\Console;
 
 use Illuminate\Console\Command;
 
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
-use Mrdebug\Crudgen\Services\Service\MakeServiceService;
+use liyando/Crudgenlaravel\Services\MakeGlobalService;
+use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
+use liyando/Crudgenlaravel\Services\Service\MakeServiceService;
 
 class MakeService extends Command
 {

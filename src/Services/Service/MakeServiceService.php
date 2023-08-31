@@ -1,11 +1,11 @@
 <?php
 
-namespace Mrdebug\Crudgen\Services\Service;
+namespace liyando/Crudgenlaravel\Services\Service;
 
 use Illuminate\Console\Concerns\InteractsWithIO;
 use Illuminate\Support\Facades\File;
-use Mrdebug\Crudgen\Services\MakeGlobalService;
-use Mrdebug\Crudgen\Services\PathsAndNamespacesService;
+use liyando/Crudgenlaravel\Services\MakeGlobalService;
+use liyando/Crudgenlaravel\Services\PathsAndNamespacesService;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 class MakeServiceService
